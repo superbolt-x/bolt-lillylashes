@@ -14,5 +14,5 @@ impressions,
 link_clicks,
 add_to_cart,
 purchases+onsite_app_purchase as purchases,
-revenue
+revenue+onsite_app_purchase_value as revenue
 FROM {{ ref('facebook_performance_by_campaign') }}
