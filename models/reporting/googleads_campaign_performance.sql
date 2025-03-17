@@ -14,7 +14,7 @@ spend,
 impressions,
 clicks,
 conversions as purchases,
-all_conversions_value as revenue,
+conversions_value as revenue,
 search_impression_share,
 search_budget_lost_impression_share,
 search_rank_lost_impression_share
