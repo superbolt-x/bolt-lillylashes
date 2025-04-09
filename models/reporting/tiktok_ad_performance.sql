@@ -46,12 +46,12 @@ with tiktok_data as (
         '(not set)' as visual,
         date_trunc('{{ granularity }}', date) as date,
         '{{ granularity }}' as date_granularity,
-        sum(cost) as spend,
+        sum(spend) as spend,
         sum(0) as impressions,
         sum(0) as clicks,
-        sum(complete_payment_events) as purchases,
-        sum(complete_payment_value) as revenue,
-        sum(web_add_to_cart_events) as atc
+        sum(purchases) as purchases,
+        sum(revenue) as revenue,
+        sum(0) as atc
     from {{ source('gsheet_raw','tiktok_gmv_insights') }}
     group by 
         campaign_name,
