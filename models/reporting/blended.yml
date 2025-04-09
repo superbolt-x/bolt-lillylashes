@@ -6,3 +6,9 @@ sources:
     tables:
       - name: campaign_convtype_performance_report
         identifier: campaign_convtype_performance_report
+
+  - name: gsheet_raw
+    schema: gsheet_raw
+    tables:
+      - name: tiktok_gmv_insights
+        identifier: tiktok_gmv_insights
