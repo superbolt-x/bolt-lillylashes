@@ -23,6 +23,7 @@ with tiktok_data as (
         cost as spend,
         impressions,
         clicks,
+        video_play_actions as video_views,
         complete_payment as purchases,
         complete_payment_rate as revenue,
         web_event_add_to_cart as atc
