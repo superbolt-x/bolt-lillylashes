@@ -11,11 +11,11 @@ with tiktok_data as (
         campaign_status,
         campaign_type_default,
         adgroup_name,
-        adgroup_id,
+        adgroup_id::varchar as ad_group_id,
         adgroup_status,
         audience,
         ad_name,
-        ad_id,
+        ad_id::varchar as ad_id,
         ad_status,
         visual,
         date,
@@ -33,7 +33,7 @@ with tiktok_data as (
 , {{ granularity }}_agg_gmv as (
     select 
         campaign_name,
-        campaign_id::varchar as campaign_id,
+        campaign_id,
         '(not set)' as campaign_status,
         '(not set)' as campaign_type_default,
         '(not set)' as adgroup_name,
