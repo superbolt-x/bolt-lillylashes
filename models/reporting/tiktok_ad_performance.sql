@@ -25,7 +25,7 @@ with tiktok_data as (
         clicks,
         video_play_actions as video_views,
         complete_payment as purchases,
-        complete_payment_rate as revenue,
+        total_complete_payment_rate as revenue,
         web_event_add_to_cart as atc
     from {{ ref('tiktok_performance_by_ad') }}
 )
